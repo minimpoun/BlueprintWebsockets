@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright 2022 Chris Ringenberg https://www.ringenberg.dev/
 
 using UnrealBuildTool;
 
@@ -14,7 +14,7 @@ public class EasyWebsockets : ModuleRules
 				"Core",
 				// ... add other public dependencies that you statically link with here ...
 			}
-			);
+		);
 			
 		
 		PrivateDependencyModuleNames.AddRange(
@@ -27,6 +27,6 @@ public class EasyWebsockets : ModuleRules
 				"WebSockets"
 				// ... add private dependencies that you statically link with here ...	
 			}
-			);
+		);
 	}
 }

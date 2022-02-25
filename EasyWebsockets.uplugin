@@ -2,23 +2,28 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"FriendlyName": "EasyWebsockets",
-	"Description": "",
+	"FriendlyName": "BlueprintWebsockets",
+	"Description": "A lightweight plugin that wraps the IWebSocket interface allowing you to connect to a WebSocket server directly in Blueprint",
 	"Category": "Other",
-	"CreatedBy": "",
-	"CreatedByURL": "",
-	"DocsURL": "",
-	"MarketplaceURL": "",
-	"SupportURL": "",
-	"CanContainContent": true,
+	"CreatedBy": "Chris Ringenberg",
+	"CreatedByURL": "https://www.ringenberg.dev/",
+	"DocsURL": "https://docs.google.com/document/d/1EXeESlA3gbdMkv2n9b5hhK5mhQTMLh-9aGH3XV_pdYs/edit?usp=sharing",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/4b5a7cbf6dda4b91878824a47104c596",
+	"SupportURL": "https://www.ringenberg.dev/contact",
+	"CanContainContent": false,
+	"EngineVersion": "4.27.0",
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
-	"Installed": false,
+	"Installed": true,
 	"Modules": [
 		{
 			"Name": "EasyWebsockets",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32"
+			]
 		}
 	]
 }
