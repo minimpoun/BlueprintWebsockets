@@ -1,4 +1,4 @@
-# EasyWebsockets
+# BlueprintWebsockets
 Simple Blueprint Websocket plugin for Unreal Engine 4
 
 Built with 4.27
