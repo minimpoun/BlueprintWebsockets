@@ -13,7 +13,7 @@ UWebSocket* UWebSocketFunctionLibrary::CreateWebSocket(FString ServerUrl, FStrin
 
 UWebSocket* UWebSocketFunctionLibrary::CreateWebSocketWithHeaders(FString ServerUrl, TMap<FString, FString> UpgradeHeaders, FString ServerProtocol /* = TEXT("ws") */)
 {
-	const TSharedPtr<IWebSocket> ActualSocket = FWebSocketsModule::Get().CreateWebSocket(ServerUrl, ServerProtocol, UpgradeHeaders);
+	const TSharedPtr<IWebSocket> ActualSocket = FModuleManager::LoadModuleChecked<FWebSocketsModule>(TEXT("WebSockets")).CreateWebSocket(ServerUrl, ServerProtocol, UpgradeHeaders);
 	UWebSocket* const WrapperSocket = NewObject<UWebSocket>();
 	WrapperSocket->InitWebSocket(ActualSocket);
 	return WrapperSocket;

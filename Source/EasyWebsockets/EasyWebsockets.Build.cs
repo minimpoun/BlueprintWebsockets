@@ -12,7 +12,8 @@ public class EasyWebsockets : ModuleRules
 			new string[]
 			{
 				"Core",
-				// ... add other public dependencies that you statically link with here ...
+				"CoreUObject",
+				"WebSockets"
 			}
 		);
 			
@@ -20,13 +21,12 @@ public class EasyWebsockets : ModuleRules
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"CoreUObject",
 				"Engine",
 				"Slate",
-				"SlateCore",
-				"WebSockets"
-				// ... add private dependencies that you statically link with here ...	
+				"SlateCore"
 			}
 		);
+
+		PublicDefinitions.Add("WITH_WEBSOCKETS=1");
 	}
 }
