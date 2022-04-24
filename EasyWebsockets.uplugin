@@ -11,7 +11,7 @@
 	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/4b5a7cbf6dda4b91878824a47104c596",
 	"SupportURL": "https://www.ringenberg.dev/contact",
 	"CanContainContent": false,
-	"EngineVersion": "4.27.0",
+	"EngineVersion": "5.0",
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": true,
@@ -21,8 +21,7 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"WhitelistPlatforms": [
-				"Win64",
-				"Win32"
+				"Win64"
 			]
 		}
 	]
