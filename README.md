@@ -1,7 +1,7 @@
 # BlueprintWebsockets
 Simple Blueprint Websocket plugin for Unreal Engine 4
 
-Built with 4.27
+Unreal Engine 5 support
 
 ![image](https://user-images.githubusercontent.com/21158549/155652050-8efb4b20-ff9e-4666-bbe8-174ffbcca76c.png)
 
